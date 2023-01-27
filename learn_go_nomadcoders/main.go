@@ -5,7 +5,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/JeonJe/learngo/scrapper"
+	"github.com/JeonJe/learn_go_nomadcoders/scrapper"
 	"github.com/labstack/echo"
 )
 
