@@ -1,4 +1,3 @@
-20230202
 <details>
 <summary>Nomadcoders go lang lecture</summary>
 <div markdown="1">       
