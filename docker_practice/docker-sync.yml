@@ -1,0 +1,7 @@
+version: 2
+
+syncs:
+  server-dir:
+    src: './code'
+    sync_excludes: ['.git', 'tmp', 'log', '*.tmp']
+    sync_strategy: 'native_osx'

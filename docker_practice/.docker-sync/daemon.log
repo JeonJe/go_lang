@@ -1,0 +1,14 @@
+          ok  Starting native_osx for sync server-dir
+          ok  server-dir container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: server-dir
+[2023-01-28 16:18:00 +0900] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory
+          ok  Starting native_osx for sync server-dir
+          ok  server-dir container still running, restarting unison in container
+unison: stopped
+unison: started
+     success  Sync container started
+     success  Showing unison logs from your sync container: server-dir
+[2023-01-30 19:08:12 +0900] Sync Log:  tail: can't open '/tmp/unison.log': No such file or directory

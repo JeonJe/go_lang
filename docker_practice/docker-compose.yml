@@ -1,0 +1,19 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  web:
+    build: .
+    # dockfile : Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/code
+      # - logvolume01:/var/log
+    # depends_on:
+    #   - redis
+  # redis:
+  #   image: redis
+    restart: always
+  volumes:
+    - /var/lib/library
+  exteranl: true
+    

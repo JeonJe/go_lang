@@ -39,6 +39,24 @@ func TestUsers(t *testing.T){
 	assert.Contains(string(data), "No Users")
 }
 
+func TestUsers_WithUsersData(t *testing.T){
+	assert := assert.New(t)
+	//테스트 용도 핸들러가 나옴 
+	ts := httptest.NewServer(NewHandler())
+	defer ts.Close()
+	
+	resp, err := http.Post(ts.URL + "/users", "application/json",
+	strings.NewReader(`{"first_name":"whssodi","last_name":"last","email":"whssodi@gmail.com"}`))
+	assert.NoError(err)
+	assert.Equal(http.StatusCreated, resp.StatusCode)
+
+	resp, err = http.Post(ts.URL + "/users", "application/json",
+	strings.NewReader(`{"first_name":"tucker","last_name":"last2","email":"tucker@gmail.com"}`))
+	assert.NoError(err)
+	assert.Equal(http.StatusCreated, resp.StatusCode)
+	
+}
+
 func TestGetUserInfo(t *testing.T){
 	assert := assert.New(t)
 	//테스트 용도 핸들러가 나옴 
