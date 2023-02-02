@@ -1,3 +1,4 @@
+1
 <details>
 <summary>Nomadcoders go lang lecture</summary>
 <div markdown="1">       
