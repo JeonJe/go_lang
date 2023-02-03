@@ -50,7 +50,7 @@ func mongoDisConn(client *mongo.Client){
 func main() {
     client := mongoConn()
 	fmt.Println(client)
-	test(client)
+	// test(client)
 	mongoDisConn(client)
 }
 
@@ -71,11 +71,11 @@ func Insert(client *mongo.Client){
 	fmt.Println("Inserted a single document: ", insertResult.InsertedID)
 }
 
-func Update(client *mongo.Client){
-	updateResult, err := collection.UpdateOne(context.TODO(), filter, update)
-if err != nil {
-    log.Fatal(err)
-}
+// func Update(client *mongo.Client){
+// 	updateResult, err := collection.UpdateOne(context.TODO(), filter, update)
+// if err != nil {
+//     log.Fatal(err)
+// }
 
 fmt.Printf("Matched %v documents and updated %v documents.\n", updateResult.MatchedCount, updateResult.ModifiedCount)
 }
